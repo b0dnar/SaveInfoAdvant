@@ -155,8 +155,8 @@ namespace SaveFotosAdvant
 
             await Task.Run(() =>
             {
-            //    if (!Directory.Exists(pathResult))
-              //      Directory.CreateDirectory(pathResult);
+                if (!Directory.Exists(pathResult))
+                    Directory.CreateDirectory(pathResult);
 
                 var cookies = BaseClasse.GetCookies();
                 if (cookies.Equals(""))
